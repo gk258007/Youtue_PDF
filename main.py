@@ -5,9 +5,12 @@ import moviepy.editor as mp
 import PyPDF2
 import openai
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 ##take the url and convert to mp3 save it to the pc
 
-openai.api_key = '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'
+openai.api_key = os.getenv('OPENAI')
 
 def videotomp3():
     file_url = input("Enter the url of the youtube")
@@ -58,7 +61,8 @@ def transcript(audio):
     summarize(file)
 
 if __name__ == '__main__':
-    videotomp3()
+   
+    print(openai.api_key)
     #summarize();
     ##transcript('/Volumes/T7/backUp/coding/rock/py_yt_openai/audio_sample.mp3')
 

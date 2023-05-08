@@ -1,5 +1,8 @@
-# exclude everythin except directory foo/bar
-*.mp3
-*.txt
-*.3gpp
-*.pdf
+
+
+
+.env
+
+.mp3
+
+.pdf
