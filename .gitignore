@@ -1,0 +1,2 @@
+# exclude everythin except directory foo/bar
+*.mp3
